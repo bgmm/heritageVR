@@ -15,7 +15,7 @@
 .navbar-dark {
 
   @include media-breakpoint-down(md) {
-    
+
     .navbar-nav .nav-item .nav-link {
       color: $navbar-light-color;
 
@@ -56,7 +56,7 @@
 }
 
 .navbar-brand-img {
-  max-height: $navbar-brand-height;
+  
   width: auto;
 }
 
@@ -135,9 +135,9 @@
 
   .navbar-collapse.collapsing {
     opacity: 0;
-    transform: scale(.9); 
+    transform: scale(.9);
   }
-  
+
 }
 
 
@@ -212,7 +212,7 @@
 
 // Dropdown item
 
-.navbar-nav .dropdown-item, 
+.navbar-nav .dropdown-item,
 .navbar-nav .dropdown-header {
 
   @include media-breakpoint-down(md) {
@@ -247,7 +247,7 @@
   }
 
   @include media-breakpoint-down(md) {
-    
+
     &::after {
       content: "\e92e";
     }
@@ -276,7 +276,7 @@
   @include media-breakpoint-up(lg) {
     display: flex;
   }
-  
+
   // Overlay
 
   &::before {
