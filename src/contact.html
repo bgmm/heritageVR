@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("partials/head.html", {
+      "pageTitle": "Contact"
+    })
+  </head>
+  <body class="bg-light">
+
+    <!-- MODALS
+    ================================================== -->
+    @@include("partials/modals.html")
+
+    <!-- NAVBAR
+    ================================================== -->
+    @@include("partials/navbar.html", {
+      "classList": "navbar-light bg-primary",
+      "type": "boxed"
+    })
+
+    <!-- WELCOME
+    ================================================== -->
+    <section class="py-10 py-md-14 overlay overlay-black overlay-60 bg-primary">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+
+            <!-- Heading -->
+            <h1 class="display-2 font-weight-bold text-white">
+              Contact us.
+            </h1>
+
+            <!-- Text -->
+            <p class="lead text-white-75 mb-0">
+              We always want to hear from you! Let us know your thoughts on our project and we'll do our very best.
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- SHAPE
+    ================================================== -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
+        @@include("assets/img/shapes/curves/curve-1.svg")
+      </div>
+    </div>
+
+    <!-- INFO
+    ================================================== -->
+    <section class="py-7 py-md-9 border-bottom border-gray-300" id="info">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+
+
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-12 col-md-6 text-center border-right border-gray-300">
+
+            <!-- Heading -->
+            <h6 class="text-uppercase text-gray-700 mb-1">
+              Send an email to Begum Moralioglu
+            </h6>
+
+            <!-- Link -->
+            <div class="mb-5 mb-md-0">
+              <a href="mailto:moralioglu@itu.edu.tr" class="h4">
+                moralioglu@itu.edu.tr
+              </a>
+            </div>
+
+          </div>
+
+          <div class="col-12 col-md-6 text-center">
+
+            <!-- Heading -->
+            <h6 class="text-uppercase text-gray-700 mb-1">
+              Send an email to Begum Aktas
+            </h6>
+
+            <!-- Link -->
+            <a href="mailto:aktas15@itu.edu.tr" class="h4">
+              aktas15@itu.edu.tr
+            </a>
+
+          </div>
+        </div> <!-- / .row -->
+      </div>
+    </section>
+
+
+
+
+
+        <!-- FOOTER
+        ================================================== -->
+        @@include("partials/footer.html", {
+          "classList": "bg-white"
+        })
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+
+  </body>
+</html>
