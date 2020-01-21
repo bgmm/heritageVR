@@ -11006,7 +11006,6 @@ a.card-meta {
   font-weight: 600; }
 
 .navbar-brand-img {
-  max-height: 2.4rem;
   width: auto; }
 
 .navbar-dark .navbar-brand {
@@ -12568,6 +12567,11 @@ body.compensate-for-scrollbar {
 .bg-dark .footer-brand {
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1); }
+
+footer a {
+  color: #ed1c24 !important; }
+  footer a:hover {
+    color: #000000 !important; }
 
 .flickity-button {
   display: -webkit-box;
