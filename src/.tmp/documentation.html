@@ -1,0 +1,740 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
+    <link rel="stylesheet" href="./node_modules/flickity/dist/flickity.min.css">
+    <link rel="stylesheet" href="./node_modules/flickity-fade/flickity-fade.css">
+    <link rel="stylesheet" href="./node_modules/aos/dist/aos.css">
+    <link rel="stylesheet" href="./node_modules/jarallax/dist/jarallax.css">
+    <link rel="stylesheet" href="./node_modules/highlightjs/styles/vs2015.css">
+    <link rel="stylesheet" href="./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+
+    <!-- Map -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- Theme CSS -->
+    <!-- build:css ./assets/css/theme.min.css -->
+    <link rel="stylesheet" href="./assets/css/theme.css">
+    <!-- endbuild -->
+
+
+    <title>Documentation</title>
+
+  </head>
+  <body class="bg-light">
+
+    <!-- MODALS
+    ================================================== -->
+    <!-- Example -->
+    <div class="modal fade" id="modalExample" tabindex="-1" role="dialog" aria-labelledby="modalExampleTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+
+            <!-- Close -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+
+            <!-- Image -->
+            <div class="text-center">
+              <img src="../assets/img/illustrations/illustration-1.png" alt="..." class="img-fluid mb-3" style="width: 200px;">
+            </div>
+
+            <!-- Heading -->
+            <h2 class="font-weight-bold text-center mb-1" id="modalExampleTitle">
+              Schedule a demo with us
+            </h2>
+
+            <!-- Text -->
+            <p class="font-size-lg text-center text-muted mb-6 mb-md-8">
+              We can help you solve company communication.
+            </p>
+
+            <!-- Form -->
+            <form>
+              <div class="row">
+                <div class="col-12 col-md-6">
+
+                  <!-- First name -->
+                  <div class="form-label-group">
+                    <input type="text" class="form-control form-control-flush" id="registrationFirstNameModal" placeholder="First name">
+                    <label for="registrationFirstNameModal">First name</label>
+                  </div>
+
+                </div>
+                <div class="col-12 col-md-6">
+
+                  <!-- Last name -->
+                  <div class="form-label-group">
+                    <input type="text" class="form-control form-control-flush" id="registrationLastNameModal" placeholder="Last name">
+                    <label for="registrationLastNameModal">Last name</label>
+                  </div>
+
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-6">
+
+                  <!-- Email -->
+                  <div class="form-label-group">
+                    <input type="email" class="form-control form-control-flush" id="registrationEmailModal" placeholder="Email">
+                    <label for="registrationEmailModal">Email</label>
+                  </div>
+
+                </div>
+                <div class="col-12 col-md-6">
+
+                  <!-- Password -->
+                  <div class="form-label-group">
+                    <input type="password" class="form-control form-control-flush" id="registrationPasswordModal" placeholder="Password">
+                    <label for="registrationPasswordModal">Password</label>
+                  </div>
+
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+              
+                  <!-- Submit -->
+                  <button class="btn btn-block btn-primary mt-3 lift">
+                    Request a demo
+                  </button>
+
+                </div>
+              </div>
+            </form>
+      
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Signup: Horizontal  -->
+    <div class="modal fade" id="modalSignupHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalSignupHorizontalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card card-row">
+            <div class="row no-gutters">
+              <div class="col-12 col-md-6 bg-cover card-img-left" style="background-image: url(./assets/img/photos/photo-8.jpg);">
+
+                <!-- Image (placeholder) -->
+                <img src="./assets/img/photos/photo-8.jpg" alt="..." class="img-fluid d-md-none invisible">
+
+                <!-- Shape -->
+                <div class="shape shape-right shape-fluid-y svg-shim text-white d-none d-md-block">
+                  <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M116 0H51V172C76 384 0 517 0 517V690H116V0Z" fill="currentColor"/>
+                  </svg>
+                </div>
+
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="card-body">
+
+                  <!-- Close -->
+                  <button type="button" class="modal-close close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+              
+                  <!-- Heading -->
+                  <h2 class="mb-0 font-weight-bold text-center" id="modalSignupHorizontalTitle">
+                    Sign Up
+                  </h2>
+
+                  <!-- Text -->
+                  <p class="mb-6 text-center text-muted">
+                    Simplify your workflow in minutes.
+                  </p>
+
+                  <!-- Form -->
+                  <form class="mb-6">
+
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label class="sr-only" for="modalSignupHorizontalEmail">
+                        Your email
+                      </label>
+                      <input type="email" class="form-control" id="modalSignupHorizontalEmail" placeholder="Your email">
+                    </div>
+
+                    <!-- Password -->
+                    <div class="form-group mb-5">
+                      <label class="sr-only" for="modalSignupHorizontalPassword">
+                        Create a password
+                      </label>
+                      <input type="password" class="form-control" id="modalSignupHorizontalPassword" placeholder="Create a password">
+                    </div>
+
+                    <!-- Submit -->
+                    <button class="btn btn-block btn-primary" type="submit">
+                      Sign up
+                    </button>
+
+                  </form>
+
+                  <!-- Text -->
+                  <p class="mb-0 font-size-sm text-center text-muted">
+                    Already have an account? <a href="./signin-illustration.html">Log in</a>.
+                  </p>
+
+                </div>
+              </div>
+
+            </div> <!-- / .row -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Signup: Vertical  -->
+    <div class="modal fade" id="modalSignupVertical" tabindex="-1" role="dialog" aria-labelledby="modalSignupVerticalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card">
+
+            <!-- Close -->
+            <button type="button" class="modal-close close text-white" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+
+            <!-- Image -->
+            <img src="./assets/img/photos/photo-7.jpg" alt="..." class="card-img-top">
+
+            <!-- Shape -->
+            <div class="position-relative">
+              <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+                <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0V480H2880V0H2160Z" fill="currentColor"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Body -->
+            <div class="card-body">
+
+              <!-- Heading -->
+              <h2 class="mb-0 font-weight-bold text-center" id="modalSignupVerticalTitle">
+                Sign Up
+              </h2>
+
+              <!-- Text -->
+              <p class="mb-6 text-center text-muted">
+                Simplify your workflow in minutes.
+              </p>
+
+              <!-- Form -->
+              <form class="mb-6">
+
+                <!-- Email -->
+                <div class="form-group">
+                  <label class="sr-only" for="modalSignupVerticalEmail">
+                    Your email
+                  </label>
+                  <input type="email" class="form-control" id="modalSignupVerticalEmail" placeholder="Your email">
+                </div>
+
+                <!-- Password -->
+                <div class="form-group mb-5">
+                  <label class="sr-only" for="modalSignupVerticalPassword">
+                    Create a password
+                  </label>
+                  <input type="password" class="form-control" id="modalSignupVerticalPassword" placeholder="Create a password">
+                </div>
+
+                <!-- Submit -->
+                <button class="btn btn-block btn-primary" type="submit">
+                  Sign up
+                </button>
+
+              </form>
+
+              <!-- Text -->
+              <p class="mb-0 font-size-sm text-center text-muted">
+                Already have an account? <a href="./signin-illustration.html">Log in</a>.
+              </p>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Signin: Horizontal  -->
+    <div class="modal fade" id="modalSigninHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalSigninHorizontalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card card-row">
+            <div class="row no-gutters">
+              <div class="col-12 col-md-6 bg-cover card-img-left" style="background-image: url(./assets/img/photos/photo-1.jpg);">
+
+                <!-- Image (placeholder) -->
+                <img src="./assets/img/photos/photo-1.jpg" alt="..." class="img-fluid d-md-none invisible">
+
+                <!-- Shape -->
+                <div class="shape shape-right shape-fluid-y svg-shim text-white d-none d-md-block">
+                  <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M116 0H51V172C76 384 0 517 0 517V690H116V0Z" fill="currentColor"/>
+                  </svg>
+                </div>
+
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="card-body">
+
+                  <!-- Close -->
+                  <button type="button" class="modal-close close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+              
+                  <!-- Heading -->
+                  <h2 class="mb-0 font-weight-bold text-center" id="modalSigninHorizontalTitle">
+                    Sign In
+                  </h2>
+
+                  <!-- Text -->
+                  <p class="mb-6 text-center text-muted">
+                    Simplify your workflow in minutes.
+                  </p>
+
+                  <!-- Form -->
+                  <form class="mb-6">
+
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label class="sr-only" for="modalSigninHorizontalEmail">
+                        Your email
+                      </label>
+                      <input type="email" class="form-control" id="modalSigninHorizontalEmail" placeholder="Your email">
+                    </div>
+
+                    <!-- Password -->
+                    <div class="form-group mb-5">
+                      <label class="sr-only" for="modalSigninHorizontalPassword">
+                        Create a password
+                      </label>
+                      <input type="password" class="form-control" id="modalSigninHorizontalPassword" placeholder="Create a password">
+                    </div>
+
+                    <!-- Submit -->
+                    <button class="btn btn-block btn-primary" type="submit">
+                      Sign in
+                    </button>
+
+                  </form>
+
+                  <!-- Text -->
+                  <p class="mb-0 font-size-sm text-center text-muted">
+                    Don't have an account yet? <a href="./signin-illustration.html">Sign up</a>.
+                  </p>
+
+                </div>
+              </div>
+
+            </div> <!-- / .row -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Signup: Vertical  -->
+    <div class="modal fade" id="modalSigninVertical" tabindex="-1" role="dialog" aria-labelledby="modalSigninVerticalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card">
+
+            <!-- Close -->
+            <button type="button" class="modal-close close text-white" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+
+            <!-- Image -->
+            <img src="./assets/img/photos/photo-21.jpg" alt="..." class="card-img-top">
+
+            <!-- Shape -->
+            <div class="position-relative">
+              <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+                <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0V480H2880V0H2160Z" fill="currentColor"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Body -->
+            <div class="card-body">
+
+              <!-- Heading -->
+              <h2 class="mb-0 font-weight-bold text-center" id="modalSigninVerticalTitle">
+                Sign In
+              </h2>
+
+              <!-- Text -->
+              <p class="mb-6 text-center text-muted">
+                Simplify your workflow in minutes.
+              </p>
+
+              <!-- Form -->
+              <form class="mb-6">
+
+                <!-- Email -->
+                <div class="form-group">
+                  <label class="sr-only" for="modalSigninVerticalEmail">
+                    Your email
+                  </label>
+                  <input type="email" class="form-control" id="modalSigninVerticalEmail" placeholder="Your email">
+                </div>
+
+                <!-- Password -->
+                <div class="form-group mb-5">
+                  <label class="sr-only" for="modalSigninVerticalPassword">
+                    Create a password
+                  </label>
+                  <input type="password" class="form-control" id="modalSigninVerticalPassword" placeholder="Create a password">
+                </div>
+
+                <!-- Submit -->
+                <button class="btn btn-block btn-primary" type="submit">
+                  Sign in
+                </button>
+
+              </form>
+
+              <!-- Text -->
+              <p class="mb-0 font-size-sm text-center text-muted">
+                Don't have an account yet? <a href="./signin-illustration.html">Sign up</a>.
+              </p>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVBAR
+    ================================================== -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary border-black">
+      <div class="container">
+
+        <!-- Brand -->
+        <a class="navbar-brand" href="./index.html">
+          <img src="./assets/img/heritageVR.svg" class="navbar-brand-img" alt="...">
+        </a>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+          <!-- Toggler -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fe fe-x"></i>
+          </button>
+
+          <!-- Navigation -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link" id="navbarDocumentation" href="documentation.html">
+                Documentation
+              </a>
+
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDocumentation" href="about.html">
+                About
+              </a>
+
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDocumentation" href="contact.html">
+                Contact
+              </a>
+
+            </li>
+          </ul>
+
+
+
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- CONTENT
+    ================================================== -->
+    <section class="pt-8 pt-md-11 pb-8 pb-md-8">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md">
+
+            <!-- Heading -->
+            <h2 class="mb-2">
+              SHAPE REPRESENTATION EXPERIMENTS IN DIFFERENT 3D MODELING ENVIRONMENTS:</h2>
+
+<h3 class="mb-2">A CASE STUDY FOR DARK CHURCH IN CAPPADOCIA</h3>
+
+            <!-- Text -->
+            <p class="font-size-lg text-black mb-md-0">
+              January 3, 2020.
+            </p>
+
+          </div>
+          <div class="col-auto">
+
+
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-12">
+
+            <!-- Divider -->
+            <hr class="my-6 my-md-8">
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-12 col-md-8">
+
+            <!-- Icon -->
+            <div class="icon text-black mb-3">
+                  <?xml version="1.0" encoding="UTF-8"?>
+                  <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+                      <title>Stockholm-icons / General / Lock</title>
+                      <desc>Created with Sketch.</desc>
+                      <defs>
+                          <polygon id="path-1" points="0 0 24 0 24 24 0 24"></polygon>
+                      </defs>
+                      <g id="Stockholm-icons-/-General-/-Lock" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <mask id="mask-2" fill="white">
+                              <use xlink:href="#path-1"></use>
+                          </mask>
+                          <g id="bound"></g>
+                          <path d="M7,10 L7,8 C7,5.23857625 9.23857625,3 12,3 C14.7614237,3 17,5.23857625 17,8 L17,10 L18,10 C19.1045695,10 20,10.8954305 20,12 L20,18 C20,19.1045695 19.1045695,20 18,20 L6,20 C4.8954305,20 4,19.1045695 4,18 L4,12 C4,10.8954305 4.8954305,10 6,10 L7,10 Z M12,5 C10.3431458,5 9,6.34314575 9,8 L9,10 L15,10 L15,8 C15,6.34314575 13.6568542,5 12,5 Z" id="Mask" fill="#335EEA"></path>
+                      </g>
+                  </svg>
+            </div>
+
+            <!-- Text -->
+            <p class="font-size-lg text-black mb-6 mb-md-8">
+              <b><em>This documentation is introductory for the research. Full-paper will be available soon.
+              </em></b></p>
+
+            <!-- Heading -->
+            <h3 class="mb-5">
+              Abstract
+            </h3>
+
+            <!-- Text -->
+            <p class="font-size-lg text-black mb-6 mb-md-8">
+              Design is a way of representation, organizing ideas in an intuitively and cognitively as is problem-solving.
+              In that sense, design mediums and tools come into prominence to determine the cognitive abilities of
+              designers, particularly the novice designers. Nevertheless, not every technology provides designers a
+              convenient medium to explore, think, and design naturally. In this study, we investigate the cognitive
+              abilities of the novice designers in the context of shape representation methods within the possibilities
+              of two different design mediums and tools. At first, we conducted a shape exploration exercise to
+              generate the 3D model pieces from the facade of the Dark Church in Cappadocia. And then, we used the
+              3D model pieces in a shape representation exercise to observe the seeing, imagining, and acting abilities
+              of novice designers in computer and virtual reality (VR) environment. The main goal of the study is to
+              observe the cognitive process of first-year architecture students in different 3D design environments
+              while they are seeing, perceiving, and discovering the shapes and sub shape relations with the help of
+              the two different 3D modeling tools. In the context of this study, we assumed that the shapes the novice
+              designers recognize are initially in 3D so that they would perceive the shape relations better in a 3D
+              environment. Thus, they can offer creative shape representations in both computer and VR
+              environments. Since the utilization of the tools has more effect on them, the ability to use the different
+              tools and the ability to have control over the devices have more influence on the results than shape
+              representations of the facade. We conclude that architectural design students focus on shape representation in the VR environment better than in the computer environment. And as a result, they
+              work efficiently and interact more with the 3D model.</p>
+
+              <!-- Heading -->
+              <h3 class="mb-5">
+                Introduction
+              </h3>
+
+              <!-- Text -->
+              <p class="font-size-lg text-black mb-6 mb-md-8">
+                Design is an inherent human cognitive ability that consists of a series of critical decisions in an iterative and highly complex process responsive to many factors (Cross et al, 1992). It can be considered as a transformation problem like other problem-solving activities (Eastman, 1968). The ultimate objective of the design process is the production of visual representations of the designed entity with enough completion and coherence to allow its construction or the construction of a visual simulation of it, physically or mentally (Goldschmidt, 1991). The transformation of the ideas and thoughts in designers’ minds into the visual representations is at the core of the whole design process. However, the ability to transfer thoughts efficiently requires knowledge and practice.
+              </p>
+
+              <!-- Text -->
+              <p class="font-size-lg text-black mb-6 mb-md-8">
+                The level of knowledge underlines visual-spatial (Bilda & Gero, 2005) or visual-mental (Oxman, 1997) cognitive ability for identification, generation, and integration processes of 2D shape recognition, 3D modeling, or transitions between 2D to 3D shape representation medium and tools. Changes between each medium and tools are difficult for designers, particularly for novice designers, with under-developed spatial thinking skills.
+
+              </p>
+
+              <!-- Text -->
+              <p class="font-size-lg text-black mb-6 mb-md-8">
+                The shape representation mediums and tools that are available today are mostly based on 2D representation techniques, although the shapes we perceive and interact are in 3D. The investigation of the shape representation for novice designers through visual-spatial cognitive ability is the main motivation of this study as the novice designers think and design in 3D design mediums.
+              </p>
+
+              <!-- Text -->
+              <p class="font-size-lg text-black mb-6 mb-md-8">
+                The main goal of the study is to observe the cognitive process of first-year architecture students in different 3D design environments while they are seeing, perceiving, and discovering the shapes and sub shape relations with the help of the two different 3D modeling tools. Possible new combinations will occur depending on the shape discoveries from the students. In the end, the capacity and ability to transform knowledge into the representational outcomes will be defined by emphasizing the perceptual and physical actions of the students.
+              </p>
+
+              <!-- Text -->
+              <p class="font-size-lg text-black mb-6 mb-md-8">
+                In the first part of the study, we collected architectural information on the Dark Church (Karanlık Kilise) to understand and interpret the form of the facade. Since most of the facade is missing today, it was necessary to find out any instructions on the original state of the facade. After that, we asked ten masters and Ph.D. students in the Architectural Design Computing Program at Istanbul Technical University (ITU) to break the facade into pieces like a puzzle as a shape exploration exercise. Next, we created the abstract model pieces of the facade related to the data provided from the shape exploration exercise. Then, we placed the model pieces in a file as a Rhinoceros document and as a VR scene in Microsoft Maquette software. In the end, we conducted a pilot study with four first-year architecture students at ITU to bring the model pieces together like a 3D puzzle in the computer and virtual reality environment as the shape representation exercise.
+              </p>
+
+              <!-- Text -->
+              <p class="font-size-lg text-black mb-6 mb-md-8">
+                This study aims to contribute to the use of 3D modeling & visualization tools in architectural education in the context of understanding destroyed or ruined heritage and shape relations in shape representation studies.
+              </p>
+
+              <!-- Heading -->
+              <h3 class="mb-5">
+                Acknowledgement
+              </h3>
+
+              <!-- Text -->
+              <p class="font-size-lg text-black mb-6 mb-md-8">
+                We would like to thank Prof. Dr. Mine Özkar for her support and valuable assistance during this project.
+              </p>
+
+              <!-- Heading -->
+              <h3 class="mb-5">
+                References
+              </h3>
+
+              <!-- Text -->
+              <p class="font-size-sm text-black mb-6 mb-md-8">
+                Bilda, Z. & Gero, J. S. (2005). Does sketching off-load visuo-spatial working memory. Studying designers, 5(2005), 145-160.
+              </p>
+
+              <!-- Text -->
+              <p class="font-size-sm text-black mb-6 mb-md-8">
+                Cross, N., Dorst, K., & Roozenburg, N. (1992). Research in Design Thinking: Proceedings of a Workshop Meeting Held at the Faculty of Industrial Design Engineering, Delft University Of Technology, the Netherlands, May 29-31, 1991: Delft University Press.
+              </p>
+
+              <!-- Text -->
+              <p class="font-size-sm text-black mb-6 mb-md-8">
+                Eastman, C. M. (1968). Explorations of the cognitive processes in design, 1–108. Retrieved from http://repository.cmu.edu/cgi/viewcontent.cgi?article=2836&context=compsci
+              </p>
+
+              <!-- Text -->
+              <p class="font-size-sm text-black mb-6 mb-md-8">
+                Goldschmidt, G. (1991). The dialectics of sketching, Creativity Research Journal 4(2):123-143
+              </p>
+
+              <!-- Text -->
+              <p class="font-size-sm text-black mb-6 mb-md-8">
+                Oxman, R. (1997). Design by re-representation: a model of visual reasoning in design. Design studies, 18(4), 329-347.
+              </p>
+
+          </div>
+          <div class="col-12 col-md-4">
+
+            <!-- Card -->
+            <div class="card shadow-light-lg">
+              <div class="card-body">
+
+                <!-- Heading -->
+                <h4>
+                  Have a question?
+                </h4>
+
+                <!-- Text -->
+                <p class="font-size-sm text-gray-800 mb-5">
+                  We’d be happy to chat with you to explain our research in detail. Anytime!
+                </p>
+
+                <!-- Heading -->
+                <h6 class="font-weight-bold text-uppercase text-gray-700 mb-2">
+                  Email us
+                </h6>
+
+                <!-- Text -->
+                <p class="font-size-sm mb-0">
+                  <a href="mailto:moralioglu@itu.edu.tr" class="text-reset">moralioglu@itu.edu.tr</a>
+                </p>
+                <p class="font-size-sm mb-0">
+                  <a href="mailto:aktas15@itu.edu.tr" class="text-reset">aktas15@itu.edu.tr</a>
+                </p>
+
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+
+
+
+    <!-- FOOTER
+    ================================================== -->
+    <footer class="py-8 py-md-11 bg-white">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-4 col-lg-4 text-center">
+
+            <!-- Brand -->
+            <img src="./assets/img/heritageVR.svg" alt="..." class="footer-brand img-fluid mb-2">
+
+            <!-- Text -->
+            <p class="text-black mb-2">
+              A research project <a class="nav-link" href="http://mbl.itu.edu.tr/">@Istanbul Technical University </a>
+            </p>
+
+
+          </div>
+
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </footer>
+
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Libs JS -->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./node_modules/flickity/dist/flickity.pkgd.min.js"></script>
+    <script src="./node_modules/flickity-fade/flickity-fade.js"></script>
+    <script src="./node_modules/aos/dist/aos.js"></script>
+    <script src="./node_modules/smooth-scroll/dist/smooth-scroll.min.js"></script>
+    <script src="./node_modules/jarallax/dist/jarallax.min.js"></script>
+    <script src="./node_modules/jarallax/dist/jarallax-video.min.js"></script>
+    <script src="./node_modules/jarallax/dist/jarallax-element.min.js"></script>
+    <script src="./node_modules/typed.js/lib/typed.min.js"></script>
+    <script src="./node_modules/countup.js/dist/countUp.min.js"></script>
+    <script src="./node_modules/highlightjs/highlight.pack.min.js"></script>
+    <script src="./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+
+    <!-- Map -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+    <!-- Theme JS -->
+    <!-- build:js ./assets/js/theme.min.js -->
+    <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/countup.js"></script>
+    <script src="./assets/js/fancybox.js"></script>
+    <script src="./assets/js/highlight.js"></script>
+    <script src="./assets/js/map.js"></script>
+    <script src="./assets/js/navbar.js"></script>
+    <script src="./assets/js/polyfills.js"></script>
+    <script src="./assets/js/popovers.js"></script>
+    <script src="./assets/js/pricing.js"></script>
+    <script src="./assets/js/smooth-scroll.js"></script>
+    <script src="./assets/js/theme.js"></script>
+    <script src="./assets/js/tooltips.js"></script>
+    <script src="./assets/js/typed.js"></script>
+    <!-- endbuild -->
+
+ 
+
+
+  </body>
+</html>
